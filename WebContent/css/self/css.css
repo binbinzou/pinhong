@@ -16,7 +16,7 @@ a{ text-decoration:none;}
 .nav ul li{width:85px;height:32px;line-height:32px;float:left;text-align:center;color:#fff;font-size:14px;font-family:'Microsoft YaHei';}
 .nav ul li a{display:block;color:#fff;}
 
-.banner_kuang{width:977px; height:352px;float:left;background:#fff;padding:12.5px 11.5px;}
+.banner_kuang{width:977px; height:312px;float:left;background:#fff;padding:11.5px 11.5px;}
 .banner{width:100%;float:left;}
 .flexslider{position:relative;height:352px;overflow:hidden;background:url(../../images/loading.gif) 50% no-repeat;}
 .slides{position:relative;z-index:1;height:352px;overflow:hidden;}
