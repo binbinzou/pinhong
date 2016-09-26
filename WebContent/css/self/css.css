@@ -1,4 +1,4 @@
-#body{  background:url(../../images/box_bj.jpg) repeat-x #fff; font:12px/22px "SimSun","Microsoft YaHei";}
+#body{  background:url(../../images/box_bj.jpg) repeat ; font:12px/22px "SimSun","Microsoft YaHei";font}
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{ margin:0; padding:0;}
 li,img,input,em{ list-style:none; border:none; font-style:normal;}
 a:link, a:visited{color:#333;text-decoration:none;}
@@ -14,7 +14,7 @@ a{ text-decoration:none;}
 .nav{width:595px;float:right;padding-top:44px;height:32px;}
 .nav ul{display:block;}
 .nav ul li{width:85px;height:32px;line-height:32px;float:left;text-align:center;color:#fff;font-size:14px;font-family:'Microsoft YaHei';}
-.nav ul li a{display:block;color:#fff;}
+.nav ul li a{display:block;color:#000;}
 
 .banner_kuang{width:977px; height:312px;float:left;background:#fff;padding:11.5px 11.5px;}
 .banner{width:100%;float:left;}
@@ -32,7 +32,7 @@ a{ text-decoration:none;}
 .box1{width:100%;float:left;padding-top:14px;}
 .box1_left{width:596px;float:left;padding-left:12px;}
 .gsjj_title{width:100%;float:left;height:19px;}
-.gsjj_tit1{width:87px;height:19px;line-height:19px;float:left;background:url(../../images/dian1.jpg) no-repeat left center;color:#424242;font-size:14px;font-family:'Microsoft YaHei';text-indent:23px;overflow:hidden;}
+.gsjj_tit1{width:87px;height:19px;line-height:19px;float:left;background:url(../../images/shuidi.png) no-repeat left center;color:#424242;font-size:14px;font-family:'Microsoft YaHei';text-indent:23px;overflow:hidden;}
 .gsjj_tit2{width:471px;float:left;height:19px;background:url(../../images/dian2.jpg) repeat-x left center;}
 .more{width:31px;height:5px;float:right;padding-top:7px;}
 .more img{display:block;}
