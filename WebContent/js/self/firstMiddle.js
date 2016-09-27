@@ -18,6 +18,10 @@ $(function() {
 function change_page(id){
 	$("#iframepage",parent.document).attr("src",id);
 	parent.document.getElementById('body').scrollIntoView();
+	for(var i=1;i<7;i++){
+		$("#tab"+i,parent.document).css("color","#000");
+	}
+	$("#tab3",parent.document).css("color","#00A2E6");
 }
 function back_page(id){
 	$("#iframepage", parent.document).attr("src",id);

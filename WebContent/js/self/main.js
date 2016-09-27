@@ -31,9 +31,13 @@ function iFrameHeight() {
 	   ifm.width = subWeb.body.scrollWidth;
 	}   
 }
-function change_page(id){
+function change_page(id,id2){
 	$("#iframepage").attr("src",id);
 	document.getElementById('body').scrollIntoView();
+	for(var i=1;i<7;i++){
+		$("#tab"+i).css("color","#000");
+	}
+	$("#"+id2).css("color","#00A2E6");
 }
 function back_page(id){
 	$("#iframepage", parent.document).attr("src",id);
