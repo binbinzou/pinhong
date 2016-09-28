@@ -8,10 +8,19 @@
 <script type="text/javascript" src="js/ext/jquery-1.6.min.js"></script>
 <script type="text/javascript" src="js/ext/jquery.nivo.slider.pack.js"></script>
 <script type="text/javascript" src="js/self/other.js"></script>
+
+<!--引用百度地图API-->
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
 <title>联系我们</title>
 </head>
 <body>
-<div class="main" >
+<div class="main" id = "main">
                 <div class="wapp">
                      <div class="main_left">
                    <!--  <div class="cpl_title">产品系列</div> -->
@@ -39,28 +48,121 @@
                 </div>
                 <div class="main_right">
                     <div class="daohang">您现在的位置：<a href="#" onclick="back_page('firstMiddle.html');">网站首页</a> &gt; 联系我们</div>
-                    <div class="product1">
-                    <p>
-						<span style="font-size:14px;"><span style="font-family:FangSong_GB2312;color:#e53333;font-size:16px;"><span style="font-family:SimSun;font-size:12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color:#e53333;"><strong><span style="font-family:SimSun;font-size:12px;">&nbsp;</span><span style="font-family:SimSun;color:#000000;font-size:12px;">&nbsp;</span></strong></span></span><span style="font-family:FangSong_GB2312;font-size:16px;"><span style="font-family:SimSun;color:#000000;font-size:12px;"><strong>上海立妮化工有限公司是一家专门从事进口化工原料销售的企业。</strong></span><span style="font-family:SimSun;color:#000000;font-size:12px;"><strong>公司主要从事涂料溶剂，环保溶剂，基础化工原料的销售。</strong></span><span style="font-family:SimSun;font-size:12px;">公司有销售工程师12名，化工专业工程师2名，在金山区并设有分公司。公司除了在上海设有专门的仓储外，另在华南，华北等地区也配有</span></span></span><span style="font-family:SimSun;font-size:12px;">相应的仓储运输。</span> 
-					</p>
-					<p>
-						<span style="font-size:14px;"></span><span style="font-family:SimSun;font-size:12px;">&nbsp;</span> 
-					</p>
-					<p>
-						<span style="font-size:14px;"><span style="font-family:SimSun;font-size:12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:SimSun;font-size:12px;">公司一直致力于国内外市场的研发，不断拓宽经营渠道，除与上海金山石化，南京扬子石化，吉林吉化等国内大型企业有密切关系，且与美国，德国，英国，日本，韩国等国外知名企业建有长期稳定的合作关系，为我们的货源需求提供了极有力的保障。</span></span> 
-					</p>
-					<p>
-						<span style="font-size:14px;"></span><span style="font-family:SimSun;font-size:12px;">&nbsp;</span> 
-					</p>
-					<p>
-						<span style="font-size:14px;"><span style="font-family:SimSun;font-size:12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:FangSong_GB2312;font-size:16px;"><span style="font-family:SimSun;font-size:12px;">公司始终坚持“</span><strong><span style="font-family:SimSun;font-size:12px;">客户至上，信誉第一</span></strong><span style="font-family:SimSun;font-size:12px;">”的发展理念；“</span><strong><span style="font-family:SimSun;font-size:12px;">优质服务，质量至上</span></strong><span style="font-family:SimSun;font-size:12px;">”的经营宗旨；“</span><strong><span style="font-family:SimSun;font-size:12px;">互惠互利，合作共赢</span></strong><span style="font-family:SimSun;font-size:12px;">”的经营理念；“</span><strong><span style="font-family:SimSun;font-size:12px;">科技创新，与时俱进</span></strong><span style="font-family:SimSun;font-size:12px;">”的经营战略;为广大客户提供最优质的产品与服务，努力为中国化工行业各企业单位做出贡献,开创一片广阔的新天地。</span></span></span> 
-					</p>
-					<p style="text-indent:2em;">
-						<span style="font-family:SimSun;font-size:12px;">&nbsp;</span> 
-					</p>
+                    <div class="product1" >
+                      <div id="contact1" style="float:left;width:280px;">
+						<p>
+							<span style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/2 SimSun;white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">地址：上海市金山区漕泾镇致富路11号3幢103室</span><br style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/22px SimSun, 'Microsoft YaHei';white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">
+							<span style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/2 SimSun;white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">联系人：朱小姐</span><br style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/22px SimSun, 'Microsoft YaHei';white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">
+							<span style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/2 SimSun;white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">手&nbsp;&nbsp;机：XXXXXXXX</span><br style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/22px SimSun, 'Microsoft YaHei';white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">
+							<span style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/2 SimSun;white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">电&nbsp;&nbsp;话：XXXXXXXX</span><br style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/22px SimSun, 'Microsoft YaHei';white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">
+							<span style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/2 SimSun;white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">传&nbsp;&nbsp;真：XXXXXXXX</span><br style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/22px SimSun, 'Microsoft YaHei';white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">
+							<span style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/2 SimSun;white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">邮&nbsp;&nbsp;箱：XXXXXXXX</span><br style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/22px SimSun, 'Microsoft YaHei';white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;">
+							<span style="widows:1;text-transform:none;background-color:#ffffff;text-indent:0px;font:12px/2 SimSun, 'Microsoft YaHei';white-space:normal;letter-spacing:normal;color:#525252;word-spacing:0px;-webkit-text-stroke-width:0px;"><span style="font-family:SimSun;font-size:12px;">主要业务：化工原料及产品、化工设备及仪表灯</span><span style="font-family:SimSun;font-size:12px;" class="Apple-converted-space">&nbsp;</span></span> 
+							</p>
+						</div>
+						<div id="contact2" style="float:left;width:510px;">
+							<div style="width:500px;height:300px;border:#ccc solid 1px;" id="dituContent"></div>
+						</div>
                     </div>
                 </div>
                 </div>
             </div>
 </body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(121.423981,30.797507);//定义一个中心点坐标
+        map.centerAndZoom(point,13);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"上海品宏化工有限公司",content:"手&nbsp;&nbsp;机：XXXXXXXX<br/>电&nbsp;&nbsp;话：XXXXXXXX",point:"121.418914|30.799547",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
 </html>

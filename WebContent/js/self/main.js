@@ -3,7 +3,7 @@
  */
 $(function() {
 	 $('#slider').nivoSlider({pauseTime: 5000,controlNav:false});
-	iFrameHeight();
+	//iFrameHeight();
 });
 
 function js_menu(id){
@@ -27,8 +27,9 @@ function iFrameHeight() {
 	var ifm= document.getElementById("iframepage");   
 	var subWeb = document.frames ? document.frames["iframepage"].document : ifm.contentDocument;   
 	if(ifm != null && subWeb != null) {
-	   ifm.height = subWeb.body.scrollHeight;
-	   ifm.width = subWeb.body.scrollWidth;
+		//console.debug(subWeb.getElementById("main"));
+	   ifm.height = subWeb.getElementById("main").offsetHeight;
+	   ifm.width = subWeb.getElementById("main").offsetWidth;
 	}   
 }
 function change_page(id,id2){
@@ -38,12 +39,13 @@ function change_page(id,id2){
 		$("#tab"+i).css("color","#000");
 	}
 	$("#"+id2).css("color","#00A2E6");
+	iFrameHeight();
 }
 function back_page(id){
 	$("#iframepage", parent.document).attr("src",id);
 }
 function returnFalse(){
-	return false;s
+	return false;
 }
 $(document).bind("contextmenu",function(e){
     if (!jQuery_isTagName(e, ['div', 'TEXTAREA'])) {
