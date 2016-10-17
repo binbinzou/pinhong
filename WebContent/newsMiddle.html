@@ -4,10 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link type="text/css" href="css/self/css.css" rel="stylesheet">
 <link type="text/css" href="css/ext/nivo-slider.css" rel="stylesheet">
+<link type="text/css" href="css/ext/pagination.css" rel="stylesheet">
 <link type="text/css" href="css/self/main.css" rel="stylesheet">
 <script type="text/javascript" src="js/ext/jquery-1.6.min.js"></script>
 <script type="text/javascript" src="js/ext/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/ext/jquery.pagination.js"></script>
 <script type="text/javascript" src="js/self/other.js"></script>
+<script type="text/javascript" src="./js/self/news.js"></script>
 <title>新闻动态</title>
 </head>
 <body>
@@ -43,25 +46,76 @@
                 <div class="main_right">
                     <div class="daohang">您现在的位置：<a href="#" onclick="back_page('firstMiddle.html');">网站首页</a> &gt; 新闻动态</div>
                     <div class="product1">
-                    <p>
-						<span style="font-size:14px;"><span style="font-family:FangSong_GB2312;color:#e53333;font-size:16px;"><span style="font-family:SimSun;font-size:12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color:#e53333;"><strong><span style="font-family:SimSun;font-size:12px;">&nbsp;</span><span style="font-family:SimSun;color:#000000;font-size:12px;">&nbsp;</span></strong></span></span><span style="font-family:FangSong_GB2312;font-size:16px;"><span style="font-family:SimSun;color:#000000;font-size:12px;"><strong>上海立妮化工有限公司是一家专门从事进口化工原料销售的企业。</strong></span><span style="font-family:SimSun;color:#000000;font-size:12px;"><strong>公司主要从事涂料溶剂，环保溶剂，基础化工原料的销售。</strong></span><span style="font-family:SimSun;font-size:12px;">公司有销售工程师12名，化工专业工程师2名，在金山区并设有分公司。公司除了在上海设有专门的仓储外，另在华南，华北等地区也配有</span></span></span><span style="font-family:SimSun;font-size:12px;">相应的仓储运输。</span> 
-					</p>
-					<p>
-						<span style="font-size:14px;"></span><span style="font-family:SimSun;font-size:12px;">&nbsp;</span> 
-					</p>
-					<p>
-						<span style="font-size:14px;"><span style="font-family:SimSun;font-size:12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:SimSun;font-size:12px;">公司一直致力于国内外市场的研发，不断拓宽经营渠道，除与上海金山石化，南京扬子石化，吉林吉化等国内大型企业有密切关系，且与美国，德国，英国，日本，韩国等国外知名企业建有长期稳定的合作关系，为我们的货源需求提供了极有力的保障。</span></span> 
-					</p>
-					<p>
-						<span style="font-size:14px;"></span><span style="font-family:SimSun;font-size:12px;">&nbsp;</span> 
-					</p>
-					<p>
-						<span style="font-size:14px;"><span style="font-family:SimSun;font-size:12px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:FangSong_GB2312;font-size:16px;"><span style="font-family:SimSun;font-size:12px;">公司始终坚持“</span><strong><span style="font-family:SimSun;font-size:12px;">客户至上，信誉第一</span></strong><span style="font-family:SimSun;font-size:12px;">”的发展理念；“</span><strong><span style="font-family:SimSun;font-size:12px;">优质服务，质量至上</span></strong><span style="font-family:SimSun;font-size:12px;">”的经营宗旨；“</span><strong><span style="font-family:SimSun;font-size:12px;">互惠互利，合作共赢</span></strong><span style="font-family:SimSun;font-size:12px;">”的经营理念；“</span><strong><span style="font-family:SimSun;font-size:12px;">科技创新，与时俱进</span></strong><span style="font-family:SimSun;font-size:12px;">”的经营战略;为广大客户提供最优质的产品与服务，努力为中国化工行业各企业单位做出贡献,开创一片广阔的新天地。</span></span></span> 
-					</p>
-					<p style="text-indent:2em;">
-						<span style="font-family:SimSun;font-size:12px;">&nbsp;</span> 
-					</p>
+                    <div id="Searchresult" ></div>
+                   <div id="hiddenresult" style="display:none;">
+                   <div class="result">
+						<ul class="ra-ul fl marTop20">
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/3197e2f6-cc6b-4704-ada0-341ae655b237" target="_blank"><span>2015.09.16</span>标准物质使用中的常见问题解答 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/32d106c9-d566-4efa-96be-bf3ce9018269" target="_blank"><span>2016.08.23</span>关于召开JJF1507-2015《标准物质的选择与应用》国家计量技术规范宣贯会的通知 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/cd73ab61-a1ba-4d26-96d8-6f1aa22acb6f" target="_blank"><span>2016.06.07</span>第二届国家气体标准物质研制及应用技术研讨会 会议资料汇总 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/fc70c838-d33f-4196-86d7-b71097f3242c" target="_blank"><span>2016.06.02</span>“蛋白和肽类药物及诊断试剂研发与质控”国际研讨会在成都召开 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/1fc906fa-30a2-4691-a96f-b04cfe06361e" target="_blank"><span>2016.05.25</span>蛋白和肽类药物及诊断试剂研发与质控国际研讨会（PPTD）第二轮会议通知 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/d1f11e0b-c479-425f-b96b-865e98577042" target="_blank"><span>2016.03.24</span>中国计量院与北京化工大学签署战略合作协议探索按需定制的人才培养新模式 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/0283a59b-4a6f-4b9c-8b35-24464557fa1c" target="_blank"><span>2016.03.21</span>白酒色谱成分分析标准物质在毛细管柱气相色谱法的应用 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/6a55a0d3-96e7-417e-98e0-80c80bdf32c9" target="_blank"><span>2016.04.11</span>第二届国家气体标准物质研制及应用技术研讨会-第二轮通知 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/adac2546-5ceb-4de8-b26d-1e48a6272282" target="_blank"><span>2016.01.29</span>蛋白和肽类药物及诊断试剂研发与质控国际研讨会 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/60bdcc4a-5e37-4f4e-a67e-66ec1a619345" target="_blank"><span>2015.11.30</span>“化学砝码”知多少？访中国计量科学研究院化学所李红梅所长 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/b80bdf1c-26b7-4a95-b36e-12221e456d5e" target="_blank"><span>2015.11.24</span>全国标准物质计量技术委员会二届一次年会暨规范审定会召开 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/0be3372a-6ff0-421a-811c-287af0de0b55" target="_blank"><span>2015.10.30</span>科技部原副部长刘燕华视察BCEIA2015中国计量院展台 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/bd762a18-c6a3-4350-9b0b-8a6c028895d2" target="_blank"><span>2015.10.26</span>标准物质目录2015版 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/3f24872d-97fd-4648-9035-80c005694d05" target="_blank"><span>2015.09.29</span>中美两国国家计量院关于温室气体测量和精准医疗领域标准的合作 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/c0b9e31c-156c-4a37-86f1-c6fbd0e70fef" target="_blank"><span>2015.09.29</span>第15届中日韩标准物质合作会议在韩国召开 </a></li>
+					    </ul>
+					</div>
+					<div class="result">
+						<ul class="ra-ul fl marTop20">
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/93964aa5-5753-43ed-8ab9-2b369768f726" target="_blank"><span>2015.09.21</span>CTC成功举办建材行业国家标准物质和能力验证技术交流会 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/da69be5e-92ae-4405-a52a-07066d2e89de" target="_blank"><span>2015.09.21</span>中国计量院受邀参加第三届国际检博会 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/a1c71a8c-680a-48ac-b418-fab7f379138c" target="_blank"><span>2015.09.18</span>标准物质目录 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/3dda0fe3-d03a-4fe3-a61b-4d7072870351" target="_blank"><span>2015.09.06</span>关于恢复邮寄的通知 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/1144b622-f98d-483b-93cd-2fd26c046c68" target="_blank"><span>2015.10.15</span>BCEIA2015化学计量与标准物质分会的通知（第二轮） </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/e31dcc44-7276-4ef6-a08f-703b88d253ea" target="_blank"><span>2015.08.17</span>关于暂停邮寄标准物质的紧急通知 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/ab498371-8b4b-4111-821f-cf9296a87a2a" target="_blank"><span>2015.07.14</span>“化学计量及标准物质十三五发展规划交流讨论会”举行 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/8e867d09-0dc0-4f73-96a8-157da6013904" target="_blank"><span>2015.06.01</span>第一届国家气体标准物质研制及应用技术研讨会召开 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/a4185168-68a8-4c20-94ad-bd4bce9c7bfc" target="_blank"><span>2015.05.25</span>第三届“共享杯”大学生科技资源共享服务创新大赛在京启动 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/fb69cf16-9fc3-45ca-8325-e71ded532f75" target="_blank"><span>2015.05.13</span>全国标准物质计量技术委员会换届通知 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/efbc05ef-c518-4de3-a420-6693472371c2" target="_blank"><span>2015.04.29</span>关于2015年4月30日下午标准物质技术服务暂停的通知 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/1a32224d-b889-4f79-95b1-77e4324d9f30" target="_blank"><span>2015.04.28</span>2015年国家科技基础条件平台运行服务工作会议在京召开 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/1717bf96-7b5f-4165-9e23-12f86a3f681e" target="_blank"><span>2015.04.28</span>国家标准物质资源共享平台2015年工作会议在北京召开 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/3f2145b7-bd09-4c24-af4b-eaacd737485c" target="_blank"><span>2015.04.20</span>第三届“共享杯”大学生科技资源共享服务创新竞赛筹备会在京召开 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/67ae2225-c638-42a7-9c6a-254a9d16d214" target="_blank"><span>2015.04.07</span>举办“第一届国家气体标准物质研制及应用技术研讨会”的通知 </a></li>
+					    </ul>
+					</div>
+					<div class="result">
+						<ul class="ra-ul fl marTop20">
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/1189aa44-6946-4bd0-ae15-6b7e1a8a77b4" target="_blank"><span>2015.03.26</span>《标准物质的选择与应用》获批国家计量技术规范 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/484f0971-2945-45a6-bf6a-c585ce783226" target="_blank"><span>2015.03.16</span>国际计量局化学部到访中国计量院并参观国家标准物质实物库 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/1479ae38-1263-4373-95f2-66424e227929" target="_blank"><span>2015.02.13</span>满足民生领域急需 支撑化学测量发展 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/d98ce8d2-bc71-46e7-bee2-e2d5b9c781b4" target="_blank"><span>2015.01.30</span>科技部平台中心主任叶玉江一行到中国计量院调研交流 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/8c83a0ab-0667-479e-a8e3-ed896a76e95f" target="_blank"><span>2015.01.12</span>中国计量院“痕量分析用试剂纯化与检测关键技术及应用”项目荣获2014年度国家科技进步二等奖 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/468dd98f-f544-4ad0-822c-9b4b85728289" target="_blank"><span>2014.12.11</span>第二届“共享杯”大学生竞赛圆满结束 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/39b5f713-b177-4cb6-bcba-f508b7c6857f" target="_blank"><span>2014.12.11</span>国家标准物质资源共享平台“标准物质研制与应用”技术培训会成功举办 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/80645ecb-e1e9-43d8-8a6a-2a562773d120" target="_blank"><span>2014.03.27</span>标准物质价格调整通知 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/990f4b99-3dd4-4e50-8963-4c5c2cb71824" target="_blank"><span>2014.11.05</span>2014年国家标准物质资源共享平台工作年会召开 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/6c671a1b-9567-434b-a426-bd1ff93b2c4a" target="_blank"><span>2014.11.04</span>2014年国家计量基标准、标准物质资源共享平台理事会会议召开 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/8258a364-dc27-4999-ab34-1bf172c2bf53" target="_blank"><span>2014.11.03</span>关于11月3日至11月6日订单延迟发货的通知 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/425241a1-b702-46de-b28b-991abbe4b208" target="_blank"><span>2014.10.29</span>2014年亚太经济合作组织（APEC）会议期间调休放假的通知 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/dec084e6-2e42-4cd6-8be0-1d95ec967141" target="_blank"><span>2014.10.23</span>“标准物质研制与应用”技术培训会第二轮会议通知 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/4dfd2bd5-48a3-4930-bbe5-80c076c2c545" target="_blank"><span>2014.10.20</span>第二届大学生科技资源共享与服务创新实践竞赛 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/79a78750-50d0-4812-b2b4-7f50e1a3db7a" target="_blank"><span>2014.09.26</span>我国化学与生物计量领域国际互认能力大幅提升 </a></li>
+					    </ul>
+					</div>
+					<div class="result">
+						<ul class="ra-ul fl marTop20">
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/aafb34a8-403a-466c-be5b-3f4c515d944b" target="_blank"><span>2014.09.26</span>提升标准物质质量，促进国际互认 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/10be7115-7b42-4332-a121-40c591d0092e" target="_blank"><span>2014.09.26</span>立足国家计量院定位，推动标准物质长远发展 </a></li>
+					    <li><img src="./images/news1.png">&nbsp;<a href="/Web/News/Details/d2949dee-546b-4b30-8f7e-a0859bfd886d" target="_blank"><span>2014.05.07</span>2013年标准物质计量技术规范宣贯圆满结束 </a></li>
+					    </ul>
+					</div>
+					</div>
+					 <div id="Pagination" style="text-align:center" class="pagination"><!-- 这里显示分页 --></div>
                     </div>
+                   
                 </div>
                 </div>
             </div>

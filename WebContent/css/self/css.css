@@ -1,7 +1,7 @@
 #body{  background:url(../../images/box_bj.jpg) repeat ; font:12px/22px "SimSun","Microsoft YaHei";}
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,tr{ margin:0; padding:0;}
 li,img,input,em{ list-style:none; border:none; font-style:normal;}
-a:link, a:visited{color:#333;text-decoration:none;}
+a:link, a:visited{color:rgb(0, 162, 230);text-decoration:none;}
 a:hover,a:active{ color:#f00; text-decoration:none;}
 a{ text-decoration:none;}
 

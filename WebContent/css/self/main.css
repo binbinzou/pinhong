@@ -14,3 +14,24 @@ td{word-wrap:break-word;word-break:break-all;}
 td{border:solid #AAE; border-width:0px 1px 1px 0px;}
 th{border:solid #AAE; border-width:0px 1px 1px 0px;}
 table{border:solid #AAE; border-width:1px 0px 0px 1px;}
+
+
+
+/**newMiddle*/
+.ra-ul {
+    overflow: hidden;
+    width: 751px;
+    padding: 0 10px;
+}
+.fl {
+    float: left;
+}
+.ra-ul li {
+    width: 751px;
+    font-size: 14px;
+    line-height: 30px;
+    float: left;
+}
+.ra-ul li span {
+    float: right;
+}
